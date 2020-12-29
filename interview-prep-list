@@ -12,4 +12,33 @@ Interview Prep List -
 5. DS Algo Revison  (LinkedList, Merge Sort, Binary Search tree, Stack)
 		  https://github.com/Richa0305/Data-Structure-with-swift
 6. iOS Network layer with unit testing 
-7. Top 10 DS interview questions 	
+7. Top 10 DS interview questions 
+
+
+
+
+Top 10 :
+
+Array -
+Fibonacci series
+How do you find all pairs of an integer array whose sum is equal to a given number?
+How do you find the largest and smallest number in an unsorted integer array?
+
+
+LinkedList
+Detect cycle in linkedlist 
+How to reverse a linked list using recursion and iteration?
+
+
+String
+How do you check if two strings are anagrams of each other?
+Reverse words in a sentence
+
+Tree
+Binary Search 
+Check if binary tree is balanced 
+
+Stack 
+Check if given expression is balanced expression or not
+
+
