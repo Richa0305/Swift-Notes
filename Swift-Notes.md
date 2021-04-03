@@ -6,13 +6,14 @@
 ##  Array
 An array stores values of the same type in an ordered list. The same value can appear in an array multiple times at different positions.
 
+```
 Ex - var someInts = [Int]()
 someInts.append(3)
 
 var threeDoubles = Array(repeating: 0.0, count: 3)
 
 var shoppingList = ["Eggs", "Milk"]
-
+```
 
 
 ##  Set 
@@ -23,6 +24,7 @@ A type must be hashable in order to be stored in a set—that is, the type mus
 
 All of Swift’s basic types (such as String, Int, Double, and Bool) are hashable by default, and can be used as set value types or dictionary key types. Enumeration case values without associated values (as described in Enumerations) are also hashable by default.
 
+```
 var letters = Set<Character>()
 
 letters.insert("a")
@@ -35,10 +37,11 @@ var favoriteGenres: Set = ["Rock", "Classical", "Hip hop"]
 for genre in favoriteGenres {
     print("\(genre)")
 }
+```
 
 #### Set Operations - 
 
-
+```
 let oddDigits: Set = [1, 3, 5, 7, 9]
 let evenDigits: Set = [0, 2, 4, 6, 8]
 let singleDigitPrimeNumbers: Set = [2, 3, 5, 7]
@@ -51,7 +54,7 @@ oddDigits.subtracting(singleDigitPrimeNumbers).sorted()
 // [1, 9]
 oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
 // [1, 2, 9]
-
+```
 Set Membership and Equality
 
 Use the “is equal” operator (==) to determine whether two sets contain all of the same values.
@@ -59,7 +62,7 @@ Use the isSubset(of:) method to determine whether all of the values of a set a
 Use the isSuperset(of:) method to determine whether a set contains all of the values in a specified set.
 Use the isStrictSubset(of:) or isStrictSuperset(of:) methods to determine whether a set is a subset or superset, but not equal to, a specified set.
 Use the isDisjoint(with:) method to determine whether two sets have no values in common.
-
+```
 let houseAnimals: Set = ["🐶", "🐱"]
 let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
 let cityAnimals: Set = ["🐦", "🐭"]
@@ -70,11 +73,11 @@ farmAnimals.isSuperset(of: houseAnimals)
 // true
 farmAnimals.isDisjoint(with: cityAnimals)
 // true
-
+```
 
 ## Dictionary 
 A dictionary stores associations between keys of the same type and values of the same type in a collection with no defined ordering. Each value is associated with a unique key, which acts as an identifier for that value within the dictionary. Unlike items in an array, items in a dictionary do not have a specified order. You use a dictionary when you need to look up values based on their identifier, in much the same way that a real-world dictionary is used to look up the definition for a particular word.
-
+```
 var namesOfIntegers = [Int: String]()
 
 namesOfIntegers[16] = "sixteen"
@@ -105,3 +108,4 @@ for airportName in airports.values {
 }
 // Airport name: London Heathrow
 // Airport name: Toronto Pearson
+```
