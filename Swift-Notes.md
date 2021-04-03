@@ -41,6 +41,9 @@ for genre in favoriteGenres {
 
 #### Set Operations - 
 
+<img width="595" alt="Screenshot 2021-04-03 at 9 41 00 PM" src="https://user-images.githubusercontent.com/10761678/113484322-57f3dd80-94c5-11eb-9bcf-7f0a47d553f3.png">
+
+
 ```
 let oddDigits: Set = [1, 3, 5, 7, 9]
 let evenDigits: Set = [0, 2, 4, 6, 8]
@@ -55,13 +58,15 @@ oddDigits.subtracting(singleDigitPrimeNumbers).sorted()
 oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
 // [1, 2, 9]
 ```
-Set Membership and Equality
+#### Set Membership and Equality
 
-Use the “is equal” operator (==) to determine whether two sets contain all of the same values.
-Use the isSubset(of:) method to determine whether all of the values of a set are contained in the specified set.
-Use the isSuperset(of:) method to determine whether a set contains all of the values in a specified set.
-Use the isStrictSubset(of:) or isStrictSuperset(of:) methods to determine whether a set is a subset or superset, but not equal to, a specified set.
-Use the isDisjoint(with:) method to determine whether two sets have no values in common.
+-   Use the “is equal” operator (==) to determine whether two sets contain all of the same values.
+-   Use the isSubset(of:) method to determine whether all of the values of a set are contained in the specified set.
+-   Use the isSuperset(of:) method to determine whether a set contains all of the values in a specified set.
+-   Use the isStrictSubset(of:) or isStrictSuperset(of:) methods to determine whether a set is a subset or superset, but not equal to, a specified set.
+-   Use the isDisjoint(with:) method to determine whether two sets have no values in common.
+
+
 ```
 let houseAnimals: Set = ["🐶", "🐱"]
 let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
