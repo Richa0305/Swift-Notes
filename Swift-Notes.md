@@ -93,8 +93,10 @@ if let oldValue = airports.updateValue("Dublin Airport", forKey: "DUB") {
     print("The old value for DUB was \(oldValue).")
 }
 // Prints "The old value for DUB was Dublin."
+```
 
-Iterating Over a Dictionary
+#### Iterating Over a Dictionary
+```
 for (airportCode, airportName) in airports {
     print("\(airportCode): \(airportName)")
 }
