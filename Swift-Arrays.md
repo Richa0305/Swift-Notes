@@ -3,7 +3,7 @@
 Arrays hold elements of one single type. The array’s element type can be of type string, integer, all the way to a class.
 
  1. empty array initialization
-
+```
 	let numbers = [Int]()
 	
 	let nums: [Int] = []
@@ -11,21 +11,23 @@ Arrays hold elements of one single type. The array’s element type can be of ty
 	let newNumbers = Array<Int>()
 
 	let newNums: Array<Int> = Array()
+	
+```
 
 2.  Preinitializing a fixed number of default values
-	
+```	
 	let repeatSwift = Array<String>(repeating: "Swift", count: 5)
 		// ["Swift", "Swift", "Swift", "Swift", "Swift"]
 
 	let repeatSwift = Array(repeating: "Swift", count: 5)
 		// ["Swift", "Swift", "Swift", "Swift", "Swift"]
-
+```
 3. Array literals 
-
+```
 	let flowers = ["Lily", "Rose", "Daisy", "Scarlet", "Tulip"]
 		// ["Lily", "Rose", "Daisy", "Scarlet", "Tulip"]
 
-
+```
 
 ### How it works - 
 
@@ -44,7 +46,7 @@ To avoid constant reallocations, Swift uses a geometric growth pattern for array
 Yes! This is where the reserveCapacity(_:) method comes in handy. If you know roughly how many total items will be contained in the array, you can declare the capacity size with the reserveCapacity(_:) method right when you initialize the array. One thing to keep in mind is that it doesn’t mean there can only be that many amount of items in the array; items can still be appended that exceeds the reserved capacity size, but that will trigger reallocation.
 
 reserveCapacity() also has an O(n) run time based on the number of elements in the array, so you should definitely call it when the array is still empty.
-
+```
 var randomNumbers = [Int]()
 randomNumbers.reserveCapacity(512)
 
@@ -52,7 +54,7 @@ for _ in 1...512 {
     randomNumbers.append(Int.random(in: 1...10))
 }
 
-
+```
 ### Swift Operations - 
 
 
