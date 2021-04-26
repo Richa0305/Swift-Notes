@@ -1,4 +1,4 @@
-## Swift Array - 
+# Swift Array 
 
 Arrays hold elements of one single type. The array’s element type can be of type string, integer, all the way to a class.
 
