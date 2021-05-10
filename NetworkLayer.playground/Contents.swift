@@ -68,6 +68,51 @@ extension ResponseHandler {
     }
 }
 
+ 
+ enum APIEnvironment {
+    case development
+    case staging
+    case production
+    
+    func baseURL () -> String {
+        return "https://\(subdomain()).\(domain())"
+    }
+    
+    func domain() -> String {
+        switch self {
+        case .development:
+            return "unsplash.com"
+        case .staging:
+            return "unsplash.com"
+        case .production:
+            return "unsplash.com"
+        }
+    }
+    
+    func subdomain() -> String {
+        switch self {
+        case .development, .production, .staging:
+            return "api"
+        }
+    }
+    
+}
+ 
+ #if DEBUG
+let environment = APIEnvironment.development
+#else
+let environment = APIEnvironment.production
+#endif
+
+let baseURL = environment.baseURL()
+ 
+ struct APIPath {
+    var gallary: String { return "\(baseURL)/search/photos"}
+
+}
+
+// Implementation of network layer in app - 
+
 struct GallaryModel : Codable{
     
 }
